@@ -1,0 +1,22 @@
+{
+  "name": "betterphotos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compileScss": "sass --no-source-map -w src/main.scss src/index.css",
+    "build:compile": "sass --no-source-map src/main.scss build/compiled.css",
+    "build:prefixes": "postcss build/compiled.css --use autoprefixer --output build/prefixed.css",
+    "build:optimize": "csso build/prefixed.css --output build/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6",
+    "autoprefixer": "^10.4.14",
+    "csso-cli": "^4.0.2",
+    "postcss": "^8.4.26",
+    "postcss-cli": "^10.1.0"
+  }
+}
